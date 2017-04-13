@@ -15,7 +15,12 @@ https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permission
 7)  get the channel id by right clicking a channel , save it for later use
 8)  open bot.py in notepad and edit in the bot token and channel-id in the given spots.
 9)  execute bot.py in python.
-10) BAM done :)
+10) there you go its done use !help to see if the bot is running or not :)
+
+#Commands:
+!help : displays the help dialogue
+!check : checks if the bot is running or not 
+!madeby : get my steam profile url to contact me
 
 #Contact me:
 steam profile : http://steamcommunity.com/id/zero_aak
