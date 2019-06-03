@@ -49,7 +49,7 @@ async def main():
     print('primary scan complete')
     await print_console('bot started , use !help for help')
     while True:
-        await asyncio.sleep(20)
+        await asyncio.sleep(3600)
         feed = feedparser.parse(url)
         for item in feed.entries:
             if item.id not in last_id:
