@@ -18,8 +18,8 @@ channel_id = ['channel1 ID', 'channel2 ID', 'channel3 ID']
 async def print_console(text):
     await Client.wait_until_ready()
     print(text)
-        for num in channel_id:
-            await Client.send_message(Client.get_channel(num),text)
+    for num in channel_id:
+        await Client.send_message(Client.get_channel(num),text)
 
 @Client.event
 async def on_ready():
