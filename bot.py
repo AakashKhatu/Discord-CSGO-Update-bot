@@ -11,15 +11,15 @@ last_id = []
 #---Edit this before running the bot------
 #1] Add the App Bot User Token you got from discord here
 token = 'ExampleTokenMakeSureItIsEnclosedByQuotes'
-#2] Add the Discord Channel IDs to which the bot will message when CSGO updates .
-#bot has to be a part of the group to which the channel belongs . duh
+#2] Add the Discord Channel IDs to which the bot will message when CSGO updates.
+#bot has to be a part of the group to which the channel belongs. duh
 channel_id = ['channel1 ID', 'channel2 ID', 'channel3 ID']
 
 async def print_console(text):
     await Client.wait_until_ready()
     print(text)
-	for num in channel_id:
-	    await Client.send_message(Client.get_channel(num),text)
+        for num in channel_id:
+            await Client.send_message(Client.get_channel(num),text)
 
 @Client.event
 async def on_ready():
@@ -39,8 +39,8 @@ async def on_message(message):
         await Client.send_message(message.channel, help_msg.format(text))
     if message.content.startswith('!madeby'):
         msg = ' *made by:* \n http://steamcommunity.com/id/zero_aak'
-        await Client.send_message(message.channel, msg)   
-        
+        await Client.send_message(message.channel, msg)
+
 async def main():
     global last_id
     feed = feedparser.parse(url)
@@ -58,5 +58,3 @@ async def main():
 
 Client.loop.create_task(main())
 Client.run(token)
-
-
